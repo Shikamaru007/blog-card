@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 16px;
+    line-height: 1.55;
+}
+body {
+    font-family: "Figtree", sans-serif;
+}
+section {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    background-color: rgb(244, 208, 78);
+}
+h2 {
+    margin: .75em 0;
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+h2:hover {
+    color: rgb(244, 208, 78);
+}
+.container {
+    width: 87.2%;
+    margin: auto;
+    border-radius: 20px;
+    border: 1px solid black;
+    padding: 1.5em;
+    background-color: white;
+    box-shadow: 8px 8px 0 black;
+}
+#illustration{
+    width: 100%;
+    border-radius: 10px;
+}
+.container p {
+    font-size: 0.875rem;
+    color: rgb(107, 107, 107);
+}
+.content{
+    margin: 1.5em 0;
+}
+.tag {
+    display: inline-block;
+    margin-bottom: .75em;
+    font-size: 0.75rem;
+    font-weight: 800;
+    padding: 0.25em 0.75em;
+    background-color: rgb(244, 208, 78);
+    border-radius: 4px;
+    color: rgb(17, 17, 17);
+}
+.date {
+    display: block;
+    margin-bottom: .75em;
+    font-size: 0.75rem;
+    color: rgb(17, 17, 17);
+}
+.user {
+    display: flex;
+    align-items: center;
+    gap: .75em;
+}
+.user span {
+    font-size: 0.75rem;
+    font-weight: 800;
+    color: rgb(17, 17, 17);
+}
+.user img {
+    width: 2rem;    
+}
+
+
+@media screen and (min-width:398px){
+    .container {
+        width: 327px;
+    }
+
+}
+
+@media screen and (min-width:729px){
+    .container{
+        width: 384px;
+    }
+    .container p {
+        font-size: 1rem;
+    }
+    h2 {
+        font-size: 1.25rem;
+        cursor: pointer;
+    }        
+    .tag {
+        font-size: 0.875rem;    
+    }
+    .date {
+        font-size: 0.875rem;
+    }
+    .user span {
+        font-size: 0.875rem;
+    }    
+}
